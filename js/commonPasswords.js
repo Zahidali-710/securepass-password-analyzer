@@ -1,0 +1,20 @@
+const commonPasswords = [
+  "password",
+  "password123",
+  "admin",
+  "welcome",
+  "qwerty",
+  "abc123",
+  "letmein",
+  "123456",
+  "12345678",
+  "123456789",
+  "iloveyou",
+  "football",
+  "monkey",
+  "dragon",
+  "login",
+  "master",
+  "hello",
+  "freedom"
+];

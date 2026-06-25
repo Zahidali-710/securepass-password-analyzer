@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>SecurePass</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/dark-mode.css"
+  >
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>🔐 SecurePass</h1>
+
+      <p>
+        Password Strength Analyzer &
+        Attack Simulator
+      </p>
+
+      <button id="theme-toggle">
+        🌙
+      </button>
+    </header>
+
+    <main>
+
+      <section class="password-card">
+
+        <h2>Analyze Your Password</h2>
+
+        <div class="input-group">
+
+          <input
+            type="password"
+            id="password-input"
+            placeholder="Enter your password"
+          >
+
+          <button id="toggle-password">
+            Show
+          </button>
+
+        </div>
+
+        <div class="meter-container">
+          <div id="strength-meter"></div>
+        </div>
+
+        <p>
+          Score:
+          <span id="score">0</span>/100
+        </p>
+
+        <p id="strength-label">
+          Very Weak
+        </p>
+
+      </section>
+
+      <section class="rules-card">
+
+        <h2>Password Rules</h2>
+
+        <ul id="rules-list">
+
+          <li id="length-rule">
+            ❌ At least 12 characters
+          </li>
+
+          <li id="uppercase-rule">
+            ❌ Contains uppercase letters
+          </li>
+
+          <li id="lowercase-rule">
+            ❌ Contains lowercase letters
+          </li>
+
+          <li id="number-rule">
+            ❌ Contains numbers
+          </li>
+
+          <li id="special-rule">
+            ❌ Contains special characters
+          </li>
+
+        </ul>
+
+      </section>
+
+      <section class="recommendation-card">
+
+        <h2>Recommendations</h2>
+
+        <ul id="recommendations">
+
+        </ul>
+
+      </section>
+
+      <section class="attack-card-section">
+
+        <h2>Attack Simulator</h2>
+
+        <div id="attack-results">
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        Passwords are analyzed locally and are never stored or transmitted.
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="js/commonPasswords.js"></script>
+  <script src="js/passwordAnalyzer.js"></script>
+  <script src="js/scoreCalculator.js"></script>
+  <script src="js/recommendations.js"></script>
+  <script src="js/entropyCalculator.js"></script>
+  <script src="js/attackSimulator.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
+
